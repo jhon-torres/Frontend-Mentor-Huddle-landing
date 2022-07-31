@@ -1,0 +1,133 @@
+:root {
+    --color_primary: hsl(257, 40%, 49%);
+    --color_second: hsl(300, 69%, 71%);
+    --font_heading: 'Poppins', sans-serif;
+    --font_body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.seccion {
+    display: grid;
+    grid-template: 20% 65% 10% 5%/ 1fr ;    
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color_primary);
+    background-image: url(./images/bg-desktop.svg);
+    background-position: center left;
+    background-size: contain;
+    padding: 0 90px 0 90px;
+}
+
+/* Inicio Encabezado */
+.head {
+    grid-area: 1 / 1 / span 1 / span 2;
+    padding: 40px 0px 40px 0;
+}
+
+.logo {
+    height: 50pt;
+    width: 200px;
+    background: url(./images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Inicio Encabezado */
+
+/* Inicio Contenido */
+.content {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: center;
+    grid-gap: 3.5em;
+}
+
+/* Ilustracion */
+.ilustation {
+    background-size: cover;
+}
+
+/* Inicio Descripcion */
+.descripcion {
+    padding: 40px 0 0 0;
+    color: white;
+}
+
+.heading {
+    font-family: var(--font_heading);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.text-body {
+    font-family: var(--font_body);
+    font-weight: 400;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+/* Fin Descripcion */
+
+.boton {
+    width: 240px;
+    height:60px;
+    background-color: white;
+    color: var(--color_primary);
+    text-align: center;
+    line-height: 60px;
+    font-family: var(--font_body);
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 40px;
+    box-shadow: 5px 5px 15px hsl(257, 43%, 24%);
+    cursor: pointer;
+}
+
+.boton:hover {
+    background: var(--color_second);
+    color: white;
+}
+/* Fin Contenido */
+
+/* Inicio Redes Sociales */
+.social-media {
+    grid-area: 3 / 1 / span 1 / span 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.iconify {    
+    margin-left: 15px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.623);
+    cursor: pointer;
+}
+
+.iconify:hover {
+    color: var(--color_second);
+}
+/* Fin Redes Sociales */
+
+/* Inicio Footer */
+footer {
+    grid-area: 4 / 1 / span 1 / span 1;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: white;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(228, 45%, 44%); 
+}
+/* Fin Footer */
